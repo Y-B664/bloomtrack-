@@ -1,43 +1,41 @@
 Proyecto de clase de Python aplicado.
-Fundamentos de Programación
+Fundamentos de ProgramaciÃ³n
 
 Nombre del Proyecto
-1. Información General
-•	Nombre estudiantes:
-•	Curso / Grupo:
-•	Fecha de entrega:
-•	Profesor:
-2. Título del Proyecto
-Un título claro y conciso que refleje la naturaleza del proyecto.
-3. Descripción del Proyecto
-Breve resumen del proyecto, incluyendo:
-•	Propósito o problema que resuelve
-•	Público objetivo o aplicación práctica
-•	Resultado esperado
+1. InformaciÃ³n General
+â€¢	Nombre estudiantes:
+â€¢	Curso / Grupo:
+â€¢	Fecha de entrega:
+â€¢	Profesor:
+2. TÃ­tulo del Proyecto
+Un tÃ­tulo claro y conciso que refleje la naturaleza del proyecto.
+3. DescripciÃ³n del Proyecto
+Obtener los datos especÃ­ficos de diferentes especies de plantas para evaluar su desarrollo y con base a ello analizar si presentan un adecuado crecimiento, 
+de esta manera dar a conocer los cuidados que necesita cada tipo de planta en beneficio de las personas interesadas en la obtenciÃ³n de estas.
 4. Objetivos
 General:
-•	Describir el propósito principal del proyecto.
-Específicos:
-•	Enumerar los objetivos técnicos o de aprendizaje específicos (ej. usar estructuras de datos, aplicar funciones, temas vistos en clase, etc.).
+â€¢	Describir el propÃ³sito principal del proyecto.
+EspecÃ­ficos:
+â€¢	Enumerar los objetivos tÃ©cnicos o de aprendizaje especÃ­ficos (ej. usar estructuras de datos, aplicar funciones, temas vistos en clase, etc.).
 5. Requisitos
-•	Herramientas y tecnologías utilizadas (Python, librerías, etc.)
-•	Requisitos de instalación o ejecución
-6. Diseño del Proyecto
-•	Arquitectura o estructura del programa: (modularización, funciones, clases, etc.)
-•	Diagrama de flujo 
-•	Interfaz (si aplica): descripción o imagen de la interfaz gráfica o consola
+â€¢	Herramientas y tecnologÃ­as utilizadas (Python, librerÃ­as, etc.)
+â€¢	Requisitos de instalaciÃ³n o ejecuciÃ³n
+6. DiseÃ±o del Proyecto
+â€¢	Arquitectura o estructura del programa: (modularizaciÃ³n, funciones, clases, etc.)
+â€¢	Diagrama de flujo 
+â€¢	Interfaz (si aplica): descripciÃ³n o imagen de la interfaz grÃ¡fica o consola
 7. Desarrollo
-•	Explicación paso a paso de cómo se desarrolló el proyecto
-•	Fragmentos de código relevantes comentados
-•	Descripción de las funciones principales
+â€¢	ExplicaciÃ³n paso a paso de cÃ³mo se desarrollÃ³ el proyecto
+â€¢	Fragmentos de cÃ³digo relevantes comentados
+â€¢	DescripciÃ³n de las funciones principales
 8. Pruebas y Resultados
-•	Cómo se probó el programa
-•	Capturas de pantalla o ejemplos de ejecución
-•	Resultados obtenidos
-•	Manual de usuario
+â€¢	CÃ³mo se probÃ³ el programa
+â€¢	Capturas de pantalla o ejemplos de ejecuciÃ³n
+â€¢	Resultados obtenidos
+â€¢	Manual de usuario
 9. Conclusiones
-•	Lecciones aprendidas
-•	Dificultades encontradas y cómo se resolvieron
-•	Posibles mejoras o ideas futuras
-10. Bibliografía / Recursos
-•	Sitios web, documentación, libros o videos utilizados, mínimo 10
+â€¢	Lecciones aprendidas
+â€¢	Dificultades encontradas y cÃ³mo se resolvieron
+â€¢	Posibles mejoras o ideas futuras
+10. BibliografÃ­a / Recursos
+â€¢	Sitios web, documentaciÃ³n, libros o videos utilizados, mÃ­nimo 10

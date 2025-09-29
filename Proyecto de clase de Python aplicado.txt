@@ -1,41 +1,48 @@
 Proyecto de clase de Python aplicado.
 Fundamentos de Programación
 
-Nombre del Proyecto
+BloomTrack 
 1. Información General
-•	Nombre estudiantes:
-•	Curso / Grupo:
-•	Fecha de entrega:
-•	Profesor:
+  •	Nombre estudiantes: 
+    • Nicole Camila Abril Reyes 
+    • Julieth Lorena Alfonso Bohórquez 
+    • Yudy Vannesa Benavides Ariza 
+    • Tomas González Cañón 
+  • Curso / Grupo:  
+    • Grupo A 
+  • Fecha de entrega:  
+      • 17 Nov 
+  • Profesor:  
+    • Pablo Carreño 
 2. Título del Proyecto
-Un título claro y conciso que refleje la naturaleza del proyecto.
+  • Análisis del entorno y Desarrollo de las Plantas 
 3. Descripción del Proyecto
-Obtener los datos específicos de diferentes especies de plantas para evaluar su desarrollo y con base a ello analizar si presentan un adecuado crecimiento, 
+  • Obtener los datos específicos de diferentes especies de plantas para evaluar su desarrollo y con base a ello analizar si presentan un adecuado crecimiento, 
 de esta manera dar a conocer los cuidados que necesita cada tipo de planta en beneficio de las personas interesadas en la obtención de estas.
 4. Objetivos
 General:
-•	Describir el propósito principal del proyecto.
+  •	Se busca brindar una herramienta, para aquellos que no tengan conocimientos de las condiciones óptimas para el cuidado de las plantas.
 Específicos:
-•	Enumerar los objetivos técnicos o de aprendizaje específicos (ej. usar estructuras de datos, aplicar funciones, temas vistos en clase, etc.).
+  •	Enumerar los objetivos técnicos o de aprendizaje específicos (ej. usar estructuras de datos, aplicar funciones, temas vistos en clase, etc.).
 5. Requisitos
-•	Herramientas y tecnologías utilizadas (Python, librerías, etc.)
-•	Requisitos de instalación o ejecución
+  •	Herramientas y tecnologías utilizadas (Python, librerías, etc.)
+  •	Requisitos de instalación o ejecución
 6. Diseño del Proyecto
-•	Arquitectura o estructura del programa: (modularización, funciones, clases, etc.)
-•	Diagrama de flujo 
-•	Interfaz (si aplica): descripción o imagen de la interfaz gráfica o consola
+  •	Arquitectura o estructura del programa: (modularización, funciones, clases, etc.)
+  •	Diagrama de flujo 
+  •	Interfaz (si aplica): descripción o imagen de la interfaz gráfica o consola
 7. Desarrollo
-•	Explicación paso a paso de cómo se desarrolló el proyecto
-•	Fragmentos de código relevantes comentados
-•	Descripción de las funciones principales
+  •	Explicación paso a paso de cómo se desarrolló el proyecto
+  •	Fragmentos de código relevantes comentados
+  •	Descripción de las funciones principales
 8. Pruebas y Resultados
-•	Cómo se probó el programa
-•	Capturas de pantalla o ejemplos de ejecución
-•	Resultados obtenidos
-•	Manual de usuario
+  •	Cómo se probó el programa
+  •	Capturas de pantalla o ejemplos de ejecución
+  •	Resultados obtenidos
+  •	Manual de usuario
 9. Conclusiones
-•	Lecciones aprendidas
-•	Dificultades encontradas y cómo se resolvieron
-•	Posibles mejoras o ideas futuras
+  •	Lecciones aprendidas
+  •	Dificultades encontradas y cómo se resolvieron
+  •	Posibles mejoras o ideas futuras
 10. Bibliografía / Recursos
-•	Sitios web, documentación, libros o videos utilizados, mínimo 10
+  •	Sitios web, documentación, libros o videos utilizados, mínimo 10

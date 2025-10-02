@@ -8,7 +8,7 @@ api = KaggleApi()
 api.authenticate()
 
 # Crear carpeta destino si no existe
-os.makedirs('datasets/spotify', exist_ok=True)
+os.makedirs('datasets/Inventario plantas', exist_ok=True)
 
 # Descargar y descomprimir el dataset
 api.dataset_download_files(

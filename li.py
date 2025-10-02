@@ -13,8 +13,8 @@ os.makedirs('datasets/spotify', exist_ok=True)
 # Descargar y descomprimir el dataset
 api.dataset_download_files(
     'benavidesy/dataset-plantas',
-    path='datasets/spotify',
+    path='datasets/Inventario plantas',
     unzip=True
 )
 
-print("✅ Dataset descargado exitosamente.")
+print("Dataset descargado exitosamente.")

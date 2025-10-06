@@ -4,4 +4,4 @@ Programa BloomTrack
     -Nicole Camila Abril Reyes 
     -Julieth Lorena Alfonso Bohórquez 
     -Yudy Vannesa Benavides Ariza 
-    -Tomas González Cañon 
+    -Tomás González Cañón 

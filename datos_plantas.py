@@ -1,11 +1,12 @@
 import random
 import time
 def generar_datos():
-    temperatura = random.randit(18,30)
-    humedad = random.randit(200, 800)
-    luz = random.randit(300, 1000)
-    tamaño = random.randit(1, 100)
-    return temperatura, humedad, luz, tamaño
+    datos = {'Temperatura ideal' : random.randint(18,30),
+    'Humedad ideal':  random.randint(200, 800),
+    'Luz ideal' : random.randint(300, 1000),
+    'Tamaño' : random.randint(1, 100)}
+    
+    return datos
 
 def mostrar_datos(temperatura, humedad, luz, tamaño):
     print("---Datos de la planta---")
@@ -17,8 +18,8 @@ def mostrar_datos(temperatura, humedad, luz, tamaño):
 def main():
     while True:
         temperatura, humedad, luz, tamaño = generar_datos()
-        mostrar_datos(temperatura, humedad, luz, tamaño)
-        time.sleep(5)
+     #   mostrar_datos(temperatura, humedad, luz, tamaño)
+        time.sleep(1200)
 
-main()
+
 

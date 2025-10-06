@@ -6,16 +6,14 @@ def nombre_planta():
     return nombre
 
 def recoger_datos():
-    datos=
-    
+    datos=generar_datos()
     entradas=tuples(datos)
     return entradas 
 
 
-
-
 def comparar_datos():
-    comparar= recoger_datos()
+    comparar=recoger_datos()
+    
 
 
 

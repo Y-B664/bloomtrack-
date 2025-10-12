@@ -5,12 +5,14 @@ import os
 
 analisis_bluep = Blueprint("analisis", __name__)
 
+
+#llamar la ruta del dataset
 ruta_dataset = os.path.join(os.path.dirname(__file__), "../dataset/inventario_plantas.csv")
 
 dataset_ref=pd.read_csv(ruta_dataset, encoding="ISO-8859-1",
                      usecols=['Id','Nombre','Temperatura ideal','Humedad ideal','Luz ideal','Tamaño'])
 
-#Llamar las temperaturas ideales
+#Llamar a las temperaturas ideales
 temp_ideal = dataset_ref.loc[0, "Temperatura ideal"]
 hum_ideal= dataset_ref.loc[0, "Humedad ideal"]
 luz_ideal =dataset_ref.loc[0, "Luz ideal"]

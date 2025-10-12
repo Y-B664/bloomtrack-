@@ -7,33 +7,39 @@ datasets_bluep = Blueprint("datasets", __name__)
 @datasets_bluep.route("/cargar_dataset", methods=['POST'])
 
 def cargar_dataset():
+    #recibir el nombre de la planta
     info= request.get_json()
-    print(info)
     Nombre = info.get("Nombre")
 
 
     if not Nombre:
         return jsonify({"Error": "Falta colocar el nombre de la planta"}), 400
     
+    #Buscar el dataset 
     ruta = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "dataset", "inventario_plantas.csv"))
-    print(f"Buscando dataset en: ", ruta)
+    print(f"Buscando planta en: ", ruta)
 
     
     if not os.path.exists(ruta):
-        return jsonify({"error": f"No se encontro el archivo inventario_plantas.csv"}), 404
+        return jsonify({"error": f"No se encontro el archivo de las plantas"}), 404
     
+    #Cargar lso datos correspondientes
+
     df = pd.read_csv(ruta, encoding='latin1')
+
+    #Eliminar las comulas con datos vacios 
     df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 
-    df_filtrado =df[df["Nombre"].str.lower() ==Nombre.lower()]
+    #Buscar por el nombre de la planta
+    df_planta =df[df["Nombre"].str.lower() ==Nombre.lower()]
     
-    if df_filtrado.empty:
-        return jsonify({"error": f"No se encontró información para la planta '{Nombre}'"}), 404
+    if df_planta.empty:
+        return jsonify({"error": f"No se encontro informacion de la planta '{Nombre}'"}), 404
     
-
+    #Mostrar lso daots de la planta correspondiente
     return jsonify({
         "Mensaje":f"Datos de la planta {Nombre} cargado correctamente",
-        "datos": df_filtrado.to_dict(orient="records")
+        "datos": df_planta.to_dict(orient="records")
     }), 200
 
     

@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparación de Datos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #c0dec3;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            color: #0e1e14;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background: rgb(155, 199, 187);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #172422;
+            padding: 12px;
+        }
+        th {
+            background: #09320f;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #deeddf;
+        }
+        .ideal {
+            color: rgb(38, 0, 255);
+            font-weight: bold;
+        }
+        .fuera {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> Comparación de Condiciones en las Plantas</h1>
+
+    {% if resultados %}
+    <table>
+        <tr>
+            <th>Planta</th>
+            <th>Temperatura</th>
+            <th>Humedad</th>
+            <th>Luz</th>
+            <th>Condición</th>
+        </tr>
+        {% for r in resultados %}
+        <tr>
+            <td>{{ r['Nombre'] }}</td>
+            <td>{{ r['Temperatura simulada'] }}°C</td>
+            <td>{{ r['Humedad simulada'] }}%</td>
+            <td>{{ r['Luz simulada'] }} luz</td>
+            <td class="{{ 'ideal' if r['Condición'] == 'Ideal' else 'fuera' }}">{{ r['Condición'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No hay resultados para mostrar.</p>
+    {% endif %}
+</body>
+</html>

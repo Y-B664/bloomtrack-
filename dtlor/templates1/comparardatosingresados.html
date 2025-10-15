@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparar Datos de Plantas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #d0f0c0, #a8e6cf);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #2d6a4f;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        form {
+            background: #ffffffcc;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 700;
+            color: #2d6a4f;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #2d6a4f;
+            box-shadow: 0 0 8px rgba(45,106,79,0.3);
+            outline: none;
+        }
+
+        button {
+            background: #2d6a4f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background: #1b4332;
+            transform: scale(1.05);
+        }
+
+        .resultado {
+            background: #ffffffcc;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0 40px 0;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .resultado:hover {
+            transform: translateY(-5px);
+        }
+
+        .resultado h2 {
+            color: #2d6a4f;
+            margin-bottom: 15px;
+        }
+
+        .correcto {
+            color: green;
+            font-weight: bold;
+        }
+
+        .incorrecto {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Flash messages */
+        .flash {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ffe0e0;
+            color: #b00020;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Comparar Datos de Plantas</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+        {% for msg in messages %}
+          {{ msg }}<br>
+        {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('comparar') }}" method="post">
+        <label for="planta">Selecciona una planta:</label>
+        <select name="planta" id="planta" required>
+            <option value="">-- Selecciona una planta --</option>
+            {% for planta in plantas %}
+            <option value="{{ planta }}">{{ planta }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="temperatura">Temperatura (°C):</label>
+        <input type="number" name="temperatura" id="temperatura" step="0.1" required>
+
+        <label for="humedad">Humedad (%):</label>
+        <input type="number" name="humedad" id="humedad" step="0.1" required>
+
+        <label for="luz">Luz:</label>
+        <input type="number" name="luz" id="luz" step="0.1" required>
+
+        <button type="submit">Comparar</button>
+    </form>
+
+    {% if resultado %}
+    <div class="resultado">
+        <h2>Resultados para {{ resultado.nombre }}</h2>
+        <p> Temperatura ideal: {{ resultado.temperatura_ideal }} °C  
+           → Diferencia: <span class="{% if resultado.temp_diff < 2 %}correcto{% else %}incorrecto{% endif %}">{{ resultado.temp_diff }}</span></p>
+        <p> Humedad ideal: {{ resultado.humedad_ideal }} %  
+           → Diferencia: <span class="{% if resultado.humedad_diff < 5 %}correcto{% else %}incorrecto{% endif %}">{{ resultado.humedad_diff }}</span></p>
+        <p> Luz ideal: {{ resultado.luz_ideal }} luz 
+           → Diferencia: <span class="{% if resultado.luz_diff < 100 %}correcto{% else %}incorrecto{% endif %}">{{ resultado.luz_diff }}</span></p>
+    </div>
+    {% endif %}
+</body>
+</html>

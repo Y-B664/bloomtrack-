@@ -21,6 +21,32 @@ Curso / Grupo:
 
 Grupo A 
 
+Proyecto de clase de Python aplicado. 
+
+ 
+
+Fundamentos de Programación 
+
+ 
+
+BloomTrack 
+
+1. Información General 
+
+Nombre estudiantes: 
+
+Nicole Camila Abril Reyes 
+
+Julieth Lorena Alfonso Bohórquez 
+
+Yudy Vannesa Benavides Ariza 
+
+Tomas González Cañón 
+
+Curso / Grupo:  
+
+Grupo A 
+
 Fecha de entrega:  
 
 17 Nov 
@@ -32,19 +58,35 @@ Pablo Carreño
  
 
 2. Título del Proyecto 
+
+ 
+
 Análisis del entorno y Desarrollo de las Plantas 
+
+ 
+
 3. Descripción del Proyecto 
+
+ 
 
 Obtener los datos específicos de diferentes especies de plantas para evaluar su desarrollo y con base a ello analizar si presentan un adecuado crecimiento, de esta manera dar a conocer los cuidados que necesita cada tipo de planta en beneficio de las personas interesadas en la obtención de estas.  
 
+ 
 
 4. Objetivos 
+
+ 
 
 General: 
 
 Se busca brindar una herramienta, para aquellos que no tengan conocimientos de las condiciones óptimas, para el cuidado de las plantas. 
 
+ 
+
 Específicos: 
+
+ 
+
  Implementar una API con Flask para gestionar los datos de las plantas y sensores. 
 
 Crear un módulo de simulación de datos ambientales (temperatura, humedad, agua, altura). 
@@ -53,7 +95,15 @@ Permitir la comparación en tiempo real entre datos simulados y condiciones idea
 
 Diseñar una interfaz web simple que muestre los resultados de la comparación. 
 
+ 
+
+ 
+
+ 
+
 5. Requisitos 
+
+ 
 
 Herramientas y tecnologías utilizadas 
 
@@ -69,25 +119,61 @@ Control de versiones: Git y GitHub
 
 Visualización: HTML/CSS (interfaz de ejecución del proyecto) 
 
+ 
 
 Requisitos de instalación o ejecución 
+
+ 
 
 1. Instalar Python 3.10 o superior. 
 
 2. Instalar Flask ejecutando el comando: 
 
+ 
+
                  “pip install flask” 
+
+ 
 
 3. Clonar o descargar el repositorio del proyecto. 
 
 4. Ejecutar el servidor Flask con: 
 
-     “python app.py”  
+        
 
-5. Abrir el navegador en http://127.0.0.1:5000/ para usar la aplicación. 
+     “python app.py” 
+
+ 
+
+5. Abrir el navegador en http://127.0.0.1:5000/ para usar la aplicación 
+
+Librerias 
+
+Flask (3.1.2): microframework utilizado para la creación de la estructura principal del sistema web. 
+
+ 
+
+Adafruit-IO (2.8.0): librería empleada para la comunicación y almacenamiento de datos provenientes de los sensores. 
+
+ 
+
+Pandas (2.3.3) y NumPy (2.3.3): utilizadas para el análisis y manipulación de datos. 
+
+ 
+
+Plotly (6.3.1): usada para la generación de gráficas interactivas. 
+
+ 
+
+ 
+
 6. Diseño del Proyecto 
 
+ 
+
 Arquitectura o estructura del programa: 
+
+ 
 
 El proyecto se organizó modularmente en distintos archivos: 
 
@@ -98,8 +184,18 @@ simulacion.py: Genera los datos simulados de sensores (temperatura, humedad, niv
 comparacion.py: Calcula la diferencia entre los valores simulados/ingresados y los ideales del dataset. 
 
 P.csv: Base de datos con las especies de plantas y sus valores óptimos. 
-  
-. Desarrollo 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Desarrollo 
 
  
 
@@ -117,70 +213,42 @@ Se visualizaron videos para instruirnos acerca de las tecnologías seleccionadas
 
 Análisis de requerimientos: 
 
-Se identificó qué tareas y funcionalidades específicas debían implementarse.   
+Se identificó qué tareas y funcionalidades específicas debían implementarse.  
 
- 
+Asignación de responsabilidades:  
 
-4. Asignación de responsabilidades:  
+Se repartieron las actividades entre los cuatro integrantes del equipo, definiendo qué debía realizar cada uno.   
 
-    Se repartieron las actividades entre los cuatro integrantes del equipo, definiendo qué debía realizar cada uno.   
+Diseño de la estructura base: 
 
- 
+De manera conjunta, se definió la estructura principal del proyecto utilizando el microframework Flask 
 
-5. Diseño de la estructura base: 
+Desarrollo individual:  
 
-   De manera conjunta, se definió la estructura principal del proyecto utilizando el microframework Flask   
+Cada integrante creó su propia rama en el repositorio y comenzó a desarrollar las funcionalidades asignadas. 
 
- 
+Estas funcionalidades se implementaron en distintos archivos, los cuales se fueron registrando en la aplicación principal. 
 
-6. Desarrollo individual:   
+Implementación de la recolección de datos: 
 
-   Cada integrante creó su propia rama en el repositorio y comenzó a desarrollar las funcionalidades asignadas.   
-
-   Estas funcionalidades se implementaron en distintos archivos, los cuales se fueron registrando en la aplicación principal.   
-
- 
-
-7. Implementación de la recolección de datos:  
-
-   Una vez desarrolladas algunas de las funciones más importantes, se implementó la recolección de datos utilizando la NodeMCU 
+ Una vez desarrolladas algunas de las funciones más importantes, se implementó la recolección de datos utilizando la NodeMCU 
 
 Fragmentos de código relevantes comentados 
 
-Descripción de las funciones principales 
+ 
+
+Descripción de las funciones principales: 
 
  
 
- 
+Recolección de datos: 
+Se realiza mediante sensores que capturan información del entorno. Los datos recolectados se almacenan en el servidor de Adafruit para su posterior análisis. 
 
-8. Pruebas y Resultados 
+Visualización de datos: 
+Se generan gráficas que muestran los datos recolectados y sus variaciones a lo largo del tiempo, facilitando la interpretación de los resultados. 
 
-Cómo se probó el programa 
+Comparación de datos: 
+Utilizando la librería Pandas, se comparan los datos recolectados con valores ideales para evaluar el desempeño o las condiciones del sistema. 
 
-Capturas de pantalla o ejemplos de ejecución 
-
-Resultados obtenidos 
-
-Manual de usuario 
-
-9. Conclusiones 
-
-Lecciones aprendidas 
-
-Dificultades encontradas y cómo se resolvieron 
-
-Posibles mejoras o ideas futuras 
-
-10. Bibliografía / Recursos 
-
-Sitios web, documentación, libros o videos utilizados, mínimo 10 
-
-https://youtu.be/-1DmVCPB6H8?si=4Jwza_BhlOYJyqlv 
-
-https://youtu.be/HiXLkL42tMU?si=mZs87ZzkAA1HuK8C 
-
-https://youtu.be/qaetvFaYOWM?si=NxoyrLM8jxTLoWqG 
-
-https://youtu.be/xTJ3uGJ_b7Q?si=weVYzEnTG4nIwDj6 
-
- 
+Modificación de condiciones: 
+Según los resultados obtenidos de la comparación, se ajustan las condiciones del sistema con el fin de optimizar su funcionamiento. 

@@ -27,19 +27,6 @@
             <option value="{{ planta }}">{{ planta }}</option>
             {% endfor %}
         </select>
-<<<<<<< HEAD
-
-        <label for="temperatura">Temperatura (°C):</label>
-        <input type="number" name="temperatura" id="temperatura" step="0.1" required>
-
-        <label for="humedad">Humedad (%):</label>
-        <input type="number" name="humedad" id="humedad" step="0.1" required>
-
-        <label for="luz">Luz:</label>
-        <input type="number" name="luz" id="luz" step="0.1" required>
-
-        <button type="submit">Comparar</button>
-=======
                 <div id="inputs-sensores" style="display: none;">
                 <label for="temperatura">Temperatura (°C):</label>
                 <input type="number" name="temperatura" id="temperatura" step="0.1"
@@ -56,7 +43,6 @@
 
                 <button type="submit">Comparar</button>
 
->>>>>>> 8b3dcaa (Implementacion de datos enviado por Adafruit)
     </form>
 
     {% if resultado %}
@@ -71,8 +57,5 @@
     </div>
     {% endif %}
 </body>
-<<<<<<< HEAD
-=======
 <script src="{{url_for("static", filename="js/comparardatosingresados.js")}}"></script>
->>>>>>> 8b3dcaa (Implementacion de datos enviado por Adafruit)
 </html>

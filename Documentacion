@@ -99,3 +99,88 @@ comparacion.py: Calcula la diferencia entre los valores simulados/ingresados y l
 
 P.csv: Base de datos con las especies de plantas y sus valores óptimos. 
   
+. Desarrollo 
+
+ 
+
+Explicación paso a paso de cómo se desarrolló el proyecto 
+
+ 
+
+Definición de tecnologías: 
+
+Primero, se definieron las tecnologías que se iban a utilizar para el desarrollo del proyecto.  
+
+Capacitación: 
+
+Se visualizaron videos para instruirnos acerca de las tecnologías seleccionadas.   
+
+Análisis de requerimientos: 
+
+Se identificó qué tareas y funcionalidades específicas debían implementarse.   
+
+ 
+
+4. Asignación de responsabilidades:  
+
+    Se repartieron las actividades entre los cuatro integrantes del equipo, definiendo qué debía realizar cada uno.   
+
+ 
+
+5. Diseño de la estructura base: 
+
+   De manera conjunta, se definió la estructura principal del proyecto utilizando el microframework Flask   
+
+ 
+
+6. Desarrollo individual:   
+
+   Cada integrante creó su propia rama en el repositorio y comenzó a desarrollar las funcionalidades asignadas.   
+
+   Estas funcionalidades se implementaron en distintos archivos, los cuales se fueron registrando en la aplicación principal.   
+
+ 
+
+7. Implementación de la recolección de datos:  
+
+   Una vez desarrolladas algunas de las funciones más importantes, se implementó la recolección de datos utilizando la NodeMCU 
+
+Fragmentos de código relevantes comentados 
+
+Descripción de las funciones principales 
+
+ 
+
+ 
+
+8. Pruebas y Resultados 
+
+Cómo se probó el programa 
+
+Capturas de pantalla o ejemplos de ejecución 
+
+Resultados obtenidos 
+
+Manual de usuario 
+
+9. Conclusiones 
+
+Lecciones aprendidas 
+
+Dificultades encontradas y cómo se resolvieron 
+
+Posibles mejoras o ideas futuras 
+
+10. Bibliografía / Recursos 
+
+Sitios web, documentación, libros o videos utilizados, mínimo 10 
+
+https://youtu.be/-1DmVCPB6H8?si=4Jwza_BhlOYJyqlv 
+
+https://youtu.be/HiXLkL42tMU?si=mZs87ZzkAA1HuK8C 
+
+https://youtu.be/qaetvFaYOWM?si=NxoyrLM8jxTLoWqG 
+
+https://youtu.be/xTJ3uGJ_b7Q?si=weVYzEnTG4nIwDj6 
+
+ 

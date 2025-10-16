@@ -1,0 +1,101 @@
+
+Proyecto de clase de Python aplicado. 
+
+Fundamentos de Programación 
+
+BloomTrack 
+
+1. Información General 
+
+Nombre estudiantes: 
+
+Nicole Camila Abril Reyes 
+
+Julieth Lorena Alfonso Bohórquez 
+
+Yudy Vannesa Benavides Ariza 
+
+Tomas González Cañón 
+
+Curso / Grupo:  
+
+Grupo A 
+
+Fecha de entrega:  
+
+17 Nov 
+
+Profesor:  
+
+Pablo Carreño 
+
+ 
+
+2. Título del Proyecto 
+Análisis del entorno y Desarrollo de las Plantas 
+3. Descripción del Proyecto 
+
+Obtener los datos específicos de diferentes especies de plantas para evaluar su desarrollo y con base a ello analizar si presentan un adecuado crecimiento, de esta manera dar a conocer los cuidados que necesita cada tipo de planta en beneficio de las personas interesadas en la obtención de estas.  
+
+
+4. Objetivos 
+
+General: 
+
+Se busca brindar una herramienta, para aquellos que no tengan conocimientos de las condiciones óptimas, para el cuidado de las plantas. 
+
+Específicos: 
+ Implementar una API con Flask para gestionar los datos de las plantas y sensores. 
+
+Crear un módulo de simulación de datos ambientales (temperatura, humedad, agua, altura). 
+
+Permitir la comparación en tiempo real entre datos simulados y condiciones ideales. 
+
+Diseñar una interfaz web simple que muestre los resultados de la comparación. 
+
+5. Requisitos 
+
+Herramientas y tecnologías utilizadas 
+
+Lenguaje: Python 
+
+Framework: Flask 
+
+Librerías: random, pandas, numpy, flask 
+
+Editor de código: Visual Studio Code 
+
+Control de versiones: Git y GitHub 
+
+Visualización: HTML/CSS (interfaz de ejecución del proyecto) 
+
+
+Requisitos de instalación o ejecución 
+
+1. Instalar Python 3.10 o superior. 
+
+2. Instalar Flask ejecutando el comando: 
+
+                 “pip install flask” 
+
+3. Clonar o descargar el repositorio del proyecto. 
+
+4. Ejecutar el servidor Flask con: 
+
+     “python app.py”  
+
+5. Abrir el navegador en http://127.0.0.1:5000/ para usar la aplicación. 
+6. Diseño del Proyecto 
+
+Arquitectura o estructura del programa: 
+
+El proyecto se organizó modularmente en distintos archivos: 
+
+app.py: Contiene la estructura principal del servidor Flask y define los endpoints. 
+
+simulacion.py: Genera los datos simulados de sensores (temperatura, humedad, nivel de agua, altura). 
+
+comparacion.py: Calcula la diferencia entre los valores simulados/ingresados y los ideales del dataset. 
+
+P.csv: Base de datos con las especies de plantas y sus valores óptimos. 
+  
